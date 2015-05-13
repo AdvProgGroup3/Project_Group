@@ -5,7 +5,7 @@ import java.util.*;
 public class Testing {
 	// JDBC driver name and database URL
 	private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	private static final String DB_URL = "jdbc:mysql://localhost/AdProg";
+	private static final String DB_URL = "jdbc:mysql://localhost/adprog";
 
 	//  Database credentials
 	private static final String USER = "root";
@@ -68,7 +68,7 @@ public class Testing {
 
 			apa.close();
 
-			String sql2 = "INSERT INTO Membership(username, password, npm) VALUES('"+ uname +"','" +pass+ "',"+Integer.parseInt(npm)+")";
+			String sql2 = "INSERT INTO membership(username, password, npm) VALUES('"+ uname +"','" +pass+ "',"+Integer.parseInt(npm)+")";
 			stmt.executeUpdate(sql2);
 
 

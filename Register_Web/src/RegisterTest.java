@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class RegisterTest {
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = "jdbc:mysql://localhost/AdProg";
+	static final String DB_URL = "jdbc:mysql://localhost/adprog";
 
 	//  Database credentials
 	static final String USER = "root";
@@ -61,7 +61,7 @@ public class RegisterTest {
 			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 
-			String sql2 = "INSERT INTO Membership(username, password, npm) VALUES('"+ uname +"','" +pass+ "',"+npm+")";
+			String sql2 = "INSERT INTO membership(username, password, npm) VALUES('"+ uname +"','" +pass+ "',"+npm+")";
 			stmt.executeUpdate(sql2);
 
 
