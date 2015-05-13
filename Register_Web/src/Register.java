@@ -2,7 +2,7 @@
 import java.sql.*;
 import java.util.*;
 
-public class Testing {
+public class Register {
 	// JDBC driver name and database URL
 	private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
 	private static final String DB_URL = "jdbc:mysql://localhost/adprog";
