@@ -41,7 +41,6 @@ public class CheckIn {
 	}
 	public boolean checkOut(){
 		if(status==true){
-			
 			status=false;
 			db2.setData(0);
 			db2.setAction(Action.UPDATE);
