@@ -1,7 +1,5 @@
-<%@ page language="java" 
-    contentType="text/html;charset=windows-1256"
-    pageEncoding="windows-1256"
-%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
+  <meta HTTP-EQUIV="Cache-Control" CONTENT="no-store" max-age="0">
+  <meta HTTP_EQUIV="Exprires" CONTENR="0">
 
 	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
 	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
@@ -116,7 +116,10 @@
 						<div class="col-md-6 column">
 							<div class="list-group">
 								<!--   <a href="#" class="list-group-item active">CHECKIN</a>-->
-								 ${data}
+									${data}
+									${area_id}
+									${user_id}
+									${checkInStatus}
 								<!-- <div class="list-group-item">
 									List header
 								</div>
