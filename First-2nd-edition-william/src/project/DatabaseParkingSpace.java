@@ -144,6 +144,7 @@ try{
 	
 		  sql = update();
 		  stmt.executeUpdate(sql);
+		  System.out.println("Updating success");
 	  
   }else if(action==Action.SELECT){
 	  sql=select();
