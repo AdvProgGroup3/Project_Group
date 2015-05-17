@@ -14,32 +14,32 @@ public class RegisterTest {
 	static final String USER = "root";
 	static final String PASS = "";
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner apa = new Scanner(System.in);
-		String uname = "";
-		String pass = "";
-		String npm = "";
-		do{
-			System.out.print("Insert your Username: ");
-			uname = apa.nextLine();
-		}while(!uname.matches("[a-zA-Z0-9-_.,]+"));
-
-		do{
-			System.out.print("\nInsert your Password: ");
-			pass = apa.nextLine();
-		}while(!pass.matches("[a-zA-Z0-9-_]+"));
-
-		do{
-			System.out.print("\nInsert your NPM: ");
-			npm = apa.nextLine();
-//			System.out.print(!(npm.length()==10) && !pass.matches("[0-9]+"));
-		}while(!((npm.length()==10) || pass.matches("[0-9]+")));
-
-		apa.close();
-		
-		Register(uname, pass, Integer.parseInt(npm));
-	}
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		Scanner apa = new Scanner(System.in);
+//		String uname = "";
+//		String pass = "";
+//		String npm = "";
+//		do{
+//			System.out.print("Insert your Username: ");
+//			uname = apa.nextLine();
+//		}while(!uname.matches("[a-zA-Z0-9-_.,]+"));
+//
+//		do{
+//			System.out.print("\nInsert your Password: ");
+//			pass = apa.nextLine();
+//		}while(!pass.matches("[a-zA-Z0-9-_]+"));
+//
+//		do{
+//			System.out.print("\nInsert your NPM: ");
+//			npm = apa.nextLine();
+////			System.out.print(!(npm.length()==10) && !pass.matches("[0-9]+"));
+//		}while(!((npm.length()==10) || pass.matches("[0-9]+")));
+//
+//		apa.close();
+//		
+//		Register(uname, pass, Integer.parseInt(npm));
+//	}
 
 
 	public static boolean Register(String uname,String pass,int npm) {
