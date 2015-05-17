@@ -39,10 +39,10 @@ public class RegisterServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
 	    PrintWriter out = response.getWriter();
-	    
-	    npm = Integer.parseInt((String) request.getParameter("inputnpm"));
-	    password = (String) request.getParameter("inputpassword");
-	    username = (String) request.getParameter("inputusername");
+
+	    npm = Integer.parseInt((String) request.getAttribute("inputnpm"));
+	    password = (String) request.getAttribute("inputpassword");
+	    username = (String) request.getAttribute("inputusername");
 	    
 	    RegisterTest test = new RegisterTest();
 	    test.Register(username, password, npm);
