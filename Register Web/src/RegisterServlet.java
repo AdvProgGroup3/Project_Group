@@ -39,16 +39,16 @@ public class RegisterServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
 	    PrintWriter out = response.getWriter();
-
-	    npm = (int) request.getAttribute("inputnpm");
-	    password = (String) request.getAttribute("inputpassword");
-	    username = (String) request.getAttribute("inputusername");
+	    
+	    npm = Integer.parseInt((String) request.getParameter("inputnpm"));
+	    password = (String) request.getParameter("inputpassword");
+	    username = (String) request.getParameter("inputusername");
 	    
 	    RegisterTest test = new RegisterTest();
 	    test.Register(username, password, npm);
 	     
 	     
-		request.getRequestDispatcher("/Checkin.jsp").forward(request, response);
+		//request.getRequestDispatcher("/Checkin.jsp").forward(request, response);
 //	     
 	}
 
