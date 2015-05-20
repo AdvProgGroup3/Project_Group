@@ -140,13 +140,13 @@
 						<div class="col-md-6 column">
 							<form role="form" action="RegisterServlet" method="get">
 								<div class="form-group">
-									 <label for="exampleInputEmail1">NPM</label><input class="form-control" id="exampleInputEmail1" type="text" name="inputnpm" maxlength="10" minlength="10" pattern="[0-9]+" required/>
+									 <label for="exampleInputEmail1">NPM</label><input class="form-control" id="exampleInputEmail1" type="number" name="inputnpm" maxlength="10" minlength="10" required/>
 								</div>
 								<div class="form-group">
-									 <label for="exampleInputEmail1">Username</label><input class="form-control" id="exampleInputEmail1" type="name" name="inputusername" pattern="[A-Za-z-0-9]+" required/>
+									 <label for="exampleInputEmail1">Username</label><input class="form-control" id="exampleInputEmail1" type="name" name="inputusername" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" required/>
 								</div>
 								<div class="form-group">
-									 <label for="exampleInputPassword1">Password</label><input class="form-control" id="exampleInputPassword1" type="password" name="inputpassword" pattern="[A-Za-z-0-9]+" required/>
+									 <label for="exampleInputPassword1">Password</label><input class="form-control" id="exampleInputPassword1" type="password" name="inputpassword" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" required/>
 								</div>
 								<button type="submit" class="btn btn-default">Submit</button>
 							</form>
