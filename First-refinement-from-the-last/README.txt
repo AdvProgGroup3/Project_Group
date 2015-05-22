@@ -29,6 +29,7 @@ WARNING:
 2. It is better to use eclipse ide for Java EE developer.
 3. Once you have downloaded the eclipse for Java EE developer, you have to include the servlet.api external jar from your 
    tomcat folder and also you have to include mysql-connector-java-5.1.18-bin external jar that you can find
-   in this First/WebContent/WEB-INF/lib folder
+   in this folder
 4. Attention! Move the 'mysql-connector-java-5.1.18-bin' external jar in the tomcat lib. If you put it on the WEB-INF/lib folder
    it can make a memory leak (See the tomcat console. There is a warning of memory leak detection).
+5. Attention! Never put the 'mysql-connector-java-5.1.18-bin' external jar in this folder
