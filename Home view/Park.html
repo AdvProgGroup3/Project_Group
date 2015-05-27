@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Parking System </title>
+		<link href="Menustyle.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	
+	<body>
+	
+		<div id="Navigator">
+			<div id="logo">
+				<a href="Park.html"> Parking System </a>
+			</div>
+			<div id="login">
+				<form action="LoginServlet" method="post">
+					
+					<label >Username : </label>
+					
+					<input type="text" name="user"/>
+				
+					<label >Password : </label>
+					
+					<input type="password" name="pwd"/>
+				
+					<input type="submit" value="Sign in"/>
+						
+				</form>	
+			</div>
+		</div>
+		
+		<div id="container">
+			<div id="conkiri">
+				<div id="text">
+					<h1 id="judul"> Register Now </h1>
+					<h1> -> </h1>
+				</div>
+				
+				<div id="slot">
+					<h1 id="slotext"> Available slots: </h1>
+					<h3> 0 </h3>
+				</div>
+				
+			</div>
+			
+			<div id="regis">
+			
+				<form role="form" action="RegisterServlet" method="get">
+					<div class="form-group">
+						 <label for="exampleInputEmail1">Student ID</label>
+						 <input class="form-control" id="exampleInputEmail1" type="text" name="inputnpm" maxlength="10" minlength="10" pattern="[0-9]+" required/>
+					</div>
+					<div class="form-group">
+						 <label for="exampleInputEmail1">Username</label>
+						 <input class="form-control" id="exampleInputEmail1" type="name" type="name" name="inputusername" pattern="[A-Za-z-0-9]+" required/>
+					</div>
+					<div class="form-group">
+						 <label for="exampleInputPassword1">Password</label>
+						 <input class="form-control" id="exampleInputPassword1" type="password" name="inputpassword" pattern="[A-Za-z-0-9]+" required/>
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div id="fasil">
+				<div id="copyright1">
+					 <address> <strong>FASILKOM UI</strong><br /> Universitas Indonesia <br /> Depok, Indonesia<br /> <abbr title="Phone">Contact Us:</abbr> 081316477140</address>
+				</div>
+			</div>
+			
+			<div id="namanama">
+				<blockquote id="copyright">
+					<p>
+						Made By Group 3
+					</p> 
+					<p>
+						<small>Agung Wirayogi <cite>1306439094</cite></small>
+					</p>
+					<p>
+					<small>Daniel Manurung <cite>1306439106</cite></small>
+					</p>
+					<p>
+					<small>Izhar Almizan <cite>13056439150</cite></small>
+					</p>
+					<p>
+						<small>William Henry <cite>1306439245</cite></small>
+					</p>
+					<p>
+					<small>Nauval Adiyasa <cite>NPM</cite></small>
+					</p>
+				</blockquote>
+			</div>
+		</div>
+		
+	</body>
+</html>
